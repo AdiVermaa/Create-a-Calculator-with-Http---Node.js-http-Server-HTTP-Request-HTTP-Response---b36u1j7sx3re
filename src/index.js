@@ -22,8 +22,8 @@ const server = http.createServer((req, res) => {
         return;
       }
 
-      const num1 = parseFloat(lines[0]);
-      const num2 = parseFloat(lines[1]);
+      const num1 =Number(lines[0]);
+      const num2 = Number(lines[1]);
       const operator = lines[2].trim().toLowerCase();
 
       if (isNaN(num1) || isNaN(num2)) {
